@@ -2,6 +2,7 @@ import { tanstackStart } from '@tanstack/react-start/plugin/vite'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { nitro } from 'nitro/vite'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
     dedupe: ['react', 'react-dom', 'react/jsx-runtime', 'react/jsx-dev-runtime', '@tanstack/react-query', '@tanstack/query-core'],
   },
   plugins: [
+    tailwindcss(),
     tanstackStart({ srcDirectory: 'src' }),
     react(),
     nitro({
