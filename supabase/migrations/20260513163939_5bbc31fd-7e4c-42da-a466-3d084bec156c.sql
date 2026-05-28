@@ -1,0 +1,1 @@
+CREATE POLICY "webhook events delete" ON public.webhook_events FOR DELETE USING (has_role(auth.uid(), 'admin'::app_role));

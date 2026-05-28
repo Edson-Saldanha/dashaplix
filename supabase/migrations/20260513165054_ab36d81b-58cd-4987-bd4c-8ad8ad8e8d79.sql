@@ -1,0 +1,1 @@
+ALTER PUBLICATION supabase_realtime ADD TABLE public.sales, public.leads, public.contracts, public.expenses, public.webhook_events, public.integrations;

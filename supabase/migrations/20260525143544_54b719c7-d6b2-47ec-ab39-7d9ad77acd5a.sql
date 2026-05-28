@@ -1,0 +1,1 @@
+ALTER TABLE public.sales ADD COLUMN IF NOT EXISTS traffic_source text NOT NULL DEFAULT 'pago' CHECK (traffic_source IN ('organico','pago'));
